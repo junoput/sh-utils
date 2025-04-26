@@ -55,17 +55,6 @@ display_success "Operation completed successfully!"
 display_error "An error occurred during the operation."
 ```
 
-## Testing
-
-The project includes tests for each utility. You can run the tests using:
-
-```bash
-bash tests/logger_test.sh
-bash tests/colors_test.sh
-bash tests/feedback_test.sh
-bash tests/utils_test.sh
-```
-
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.

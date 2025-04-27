@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Source the colors file
-source "$(dirname "$0")/colors.sh"
+# Source the colors file using an absolute path
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/colors.sh"
 
 # Function to display a success message
 function success() {

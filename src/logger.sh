@@ -1,7 +1,8 @@
 # Logger functions for shell scripts
 
-# Define color constants
-source ./colors.sh
+# Source the colors file using an absolute path
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/colors.sh"
 
 # Log an info message
 log_info() {
